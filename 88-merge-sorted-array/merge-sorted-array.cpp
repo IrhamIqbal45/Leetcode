@@ -4,8 +4,7 @@ public:
         int l=m;
         for(int i=0;i<n;i++)
         {
-            nums1[l]=nums2[i];
-            l++;
+            nums1[l++]=nums2[i];
         }
         sort(nums1.begin(),nums1.end());
     }

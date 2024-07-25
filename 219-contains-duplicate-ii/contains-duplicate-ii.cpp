@@ -4,7 +4,7 @@ public:
         unordered_map<int,int>ans;
         for(int i=0;i<nums.size();i++)
         {
-            if(ans.count(nums[i]))
+            if(ans.find(nums[i])!= ans.end())
             {
                 if(abs(i-ans[nums[i]]) <= k)
                 return true;
